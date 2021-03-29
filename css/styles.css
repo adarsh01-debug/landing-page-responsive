@@ -1,0 +1,229 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner-area{
+    background: linear-gradient(to bottom, rgba(134, 109, 90, 0.6) 0%, rgba(92, 77, 66, 0.6) 100%), url(../img/travel-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* navbar start */
+
+.header-area .navbar .navbar-brand{
+    font-weight:700;
+    padding: 0.2rem 0.5rem;
+}
+
+.bg-light{
+    background:transparent !important;
+    transition:0.5s ease;
+}
+
+.bg-light.scrolled{
+    background:#fff !important;
+}
+
+/* navbar end */
+
+.main-body{
+    height: 100vh;
+}
+
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12%;
+    /* padding: 12% 12%;
+    margin: 0; */
+}
+
+.heading{
+    color: white;
+    text-align: center;
+}
+
+.heading > hr{
+    border: 2px solid orangered;
+}
+
+.join-now{
+    padding: 5%;
+    text-align: center;
+}
+
+.button:hover{
+    background:none;
+}
+
+/* about us start */
+
+.about-us{
+    padding: 8rem 2rem;
+}
+
+.about-heading{
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0px 20px 40px rgba(57, 56, 61, 0.205);
+}
+/* about us end */
+
+
+/* places display start */
+
+.places-display{
+    background-color: rgb(255, 242, 121);
+    padding: 6rem 2rem;
+}
+
+.places-heading{
+    text-align: center;
+}
+
+/* places display end */
+
+
+/* contact start */
+
+.page-section{
+    padding: 8rem 2rem;
+}
+
+/* social handles start */
+
+.icons-container{
+    padding-top:3%;
+}
+
+.social-icons .item {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    transition: .3s all;
+    position: relative;
+    -webkit-transition: .3s all;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+    line-height: 60px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.18), 0px 4px 15px 0px rgba(0,0,0,0.15);
+}
+
+.social-icons.spinned .item:hover {
+    -webkit-animation: Social-Icons-Flipping .3s;
+    animation: Social-Icons-Flipping .3s
+}
+.social-icons .item:hover {
+    text-decoration: none;
+    background-color: #42474E;
+    box-shadow: 0 -1px 0 transparent inset, 0 2px 3px rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .3);
+    color: #fff!important
+}
+.social-icons .item .fa {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.social-icons .facebook {
+    color: #425F9C!important
+}
+.social-icons .twitter {
+    color: #00ACEE!important
+}
+.social-icons .google {
+    color: #c00!important
+}
+.social-icons .linkedin {
+    color: #0073B2!important
+}
+.social-icons .youtube {
+    color: #EB3E40!important
+}
+.social-icons .instagram {
+    color: #5E8AAC!important
+}
+
+.facebook:hover {
+    background-color: #425F9C!important
+}
+.twitter:hover {
+    background-color: #00ACEE!important
+}
+.google:hover {
+    background-color: #c00!important
+}
+.linkedin:hover {
+    background-color: #0073B2!important
+}
+.youtube:hover {
+    background-color: #EB3E40!important
+}
+.instagram:hover {
+    background-color: #5E8AAC!important
+}
+
+@-webkit-keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes Social-Icons-Flipping {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+/* social handles end */
+
+
+/* contact end */
+
+/* media queries */
+
+@media only screen and (max-width: 993px){
+    .bg-light{
+        background:#fff !important;
+        transition:0.5s ease;
+    }
+
+    .banner-section{
+        padding-top: 40%;
+    }
+
+    .about-us{
+        padding: 2.5rem 2.5rem;
+    }
+
+    .places-display{
+        padding: 2.5rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .banner-section{
+        padding-top: 70%;
+    }
+}
